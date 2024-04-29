@@ -1,16 +1,23 @@
-# [从零开始创建你的个人博客](https://xitu.github.io/courses/webdev/getting_started_fe/index)
+## 设计
+设计的第一个步骤是「基本概念」。抽象概念与具体实现之间是完整的过程。
+「形式」可来源于自然，要素经过叠加形成精妙组合。
+洞悉设计的过程，可选途径是分析现有作品。
 
-你请我喝一杯咖啡，我教你写一个博客系统。这是写给普通人看的网页开发课。
+## Order and composition
+描述设计的词汇，一部分与几何有关。例如组织线及轴线、坐标格网、测量与比例系统。
+组织排序来自人的需求，其次是关于设计的实现，再次是实用性。
+### 古典建筑的基础工具
+方格系统是一种古老的组织工具，Vtruvius 认为建筑在可用性之外，也代表秩序、简约与和谐等。Parthenon 中石柱设计正是起到这种组织排序的作用，构件的排布、尺寸直观影响组合的结构。而建筑中的构件也在受「想象中」的轴线规范，形成对称结构。
+文艺复兴时期的建筑良好应用了几何学，基本的几何图形被经常应用于结构。
+在「度量上的正确」后，等级排序也成为了新的组合原则，不同要素存在不同的价值。
+景观分析中，存在「意象系统」与「空间系统」，空间系统与「构件」关联不大，是对空间总体格局的安排；而意象系统关系到每个具体构件的安排方式，如景观湖、树丛、建筑阶梯等。
+巴洛克建筑：形状、空间、光线的交互。相比文艺复兴时期，成为更复杂的体系。
 
-## 章节内容
+图画式从图画中提取结构组合的方案。叙事式将景观设计当作叙事的铺陈。
 
-- 第1节：[什么是前端工程师](https://xitu.github.io/courses/webdev/getting_started_fe/what_is_fe)
-- 第2节：[设计简单的个人博客吧](https://xitu.github.io/courses/webdev/getting_started_fe/design_a_blog)
-- 第3节：[初识HTML5](https://xitu.github.io/courses/webdev/getting_started_fe/learn_html5)
-- 第4节：[用HTML组织博客内容](https://xitu.github.io/courses/webdev/getting_started_fe/html_and_blog)
-- 第5节：[初识CSS](https://xitu.github.io/courses/webdev/getting_started_fe/learn_css)
-- 第6节：[元素盒子](https://xitu.github.io/courses/webdev/getting_started_fe/element_box)
-- 第7节：[display属性](https://xitu.github.io/courses/webdev/getting_started_fe/display_attribute)
-- 第8节：[布局和样式](https://xitu.github.io/courses/webdev/getting_started_fe/layout_and_styles)
-- 第10节：[用JS给网页来点变化](https://xitu.github.io/courses/webdev/getting_started_fe/javascript_in_page)
-- 第11节：[发布你的博客作品](https://xitu.github.io/courses/webdev/getting_started_fe/publish_your_blog_work)
+### 由配置到组合
+19 世纪开始，大都会开始出现，相比先前，建筑的规模迅速扩大，需求开始变化，建筑不再简单由外形上的「几何聚合」就可实现原有效用，而是开始转向对于个别构件进行元素赋予。此外由于建筑师们从文艺复兴时期留存下来的对于「原创性」的认同，新的建筑也必须成为设计师们发挥特质的舞台。
+
+
+
+
