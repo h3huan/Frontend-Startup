@@ -7,77 +7,51 @@
     html, body {
       padding: 0;
       margin: 0;
+      
     }
-    html {
+    html{
       height: 100%;
     }
-    body {
+    body{
       min-height: 100%;
       display: flex;
-      /* font-family: "Helvetica Neue",Arial,"Hiragino Sans GB",STHeiti,"Microsoft YaHei"; */
+      
+      /* flex-direction: column; */
     }
-    a {
-      text-decoration: none;
-    }
-    #main {
+    #main{
       order: 1;
       padding: 0 30px;
       display: flex;
       flex-direction: column;
     }
-    section {
-      flex-grow: 1;
-      padding-bottom: 30px;
-    }
-    section h2 {
-      font-size: 2rem;
-      font-weight: normal;
-    }
-    section p {
-      line-height: 180%;
-    }
-    article {
-      position: relative;
-      padding-bottom: 30px;
-      border-bottom: solid 1px #ccc;
-    }
-    article a {
-      color: #333;
-    }
-    .pubtime {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-    }
-    footer {
-      text-align: center;
-      line-height: 60px;
-      border-top: solid 1px #ccc;
-    }
-    #sidebar {
+    #sidebar{
       flex-shrink: 0;
       width: 230px;
-      background-color: #222;
-      color: #999;
+      background-color: black;
+      color: antiquewhite;
     }
-    #sidebar a {
-      color: #999;
+    #sidebar a{
+      color: rgb(255, 193, 118);
     }
-    #profile {
+
+    section{
+      flex-grow: 1;
+    }
+    footer{
       text-align: center;
-      padding-top: 40px;
+      line-height: 60px;
+      border-top: solid 1px aquamarine;
     }
-    #profile h1 {
-      font-size: 1.5rem;
-      font-weight: normal;
-    }
-    #avatar img {
-      width: 150px;
-    }
-    #navigator {
-      padding-left: 40px;
-      line-height: 30px;      
-    }
+    article {
+  position: relative;
+  padding-bottom: 30px;
+  border-bottom: solid 1px #ccc;
+}
+    .pubtime {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
   </style>
 </head>
 <body>
@@ -85,22 +59,22 @@
     <!--文章区-->
     <section>
       <article>
-        <h2><a href="articles/01.html">我的第一篇文章</a></h2>
+        <h2>我的第一篇文章</h2>
         <p>正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要</p>
         <div class="pubtime">发布时间：<em>2018-12-08</em></div>
         <div class="readmore"><a href="articles/01.html">阅读全文</a></div>
       </article>
       <article>
-        <h2><a href="articles/02.html">我的第二篇文章</a></h2>
+        <h2>我的第二篇文章</h2>
         <p>正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要</p>
         <div class="pubtime">发布时间：<em>2018-12-08</em></div>
-        <div class="readmore"><a href="articles/02.html">阅读全文</a></div>
+        <div class="readmore"><a href="articles/01.html">阅读全文</a></div>
       </article>
       <article>
-        <h2><a href="articles/03.html">我的第三篇文章</a></h2>
+        <h2>我的第三篇文章</h2>
         <p>正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要正文摘要</p>
         <div class="pubtime">发布时间：<em>2018-12-08</em></div>
-        <div class="readmore"><a href="articles/03.html">阅读全文</a></div>
+        <div class="readmore"><a href="articles/01.html">阅读全文</a></div>
       </article>
     </section>
     <!--列表区-->
@@ -121,19 +95,18 @@
     </div>
   </div>
   <script type="text/javascript">
-    const pubtimeEls = document.querySelectorAll('.pubtime em');
-    pubtimeEls.forEach((el) => {
+    const fuse = document.querySelectorAll('.pubtime em');
+    fuse.forEach((el)=>{
       const date = new Date(el.innerHTML);
       el.innerHTML = `${date.getMonth() + 1}月${date.getDate()}日, ${date.getFullYear()}`;
     });
-
     let title = document.title;
-    window.addEventListener('blur', () => {
-      document.title = '记得回来看我啊~';
-    });
-    window.addEventListener('focus', () => {
-      document.title = title;
-    });
+  window.addEventListener('blur', () => {
+    document.title = '记得回来看我啊~';
+  });
+  window.addEventListener('focus', () => {
+    document.title = title;
+  });
   </script>
 </body>
 </html>

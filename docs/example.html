@@ -1,62 +1,50 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>我的第一个网页</title>
-    <style>
-    body {
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>合欢</title>
+  <style>
+    html, body{
+      padding: 0;
+      margin: 0;
+    }
+    body{
       background-color: black;
-      color: white;
-      margin: 0;
+      color: antiquewhite;
+      display: flex;
+      flex-direction: column;
     }
-    div.title {
-      font-size: 0;
+    .img{
+      background-color: rgb(255, 255, 255);
+      width: 220px;
+      padding: 60px;
+      margin-bottom: 80px;
+      border: solid 4px cadetblue;
     }
-    h1 {
-      font-size: 32px;
+    .fusion{
       display: inline-block;
-      background-color: grey;
-      margin: 0;
-      width: 400px;
-      line-height: 100px;
-      text-align: center;
+      background-color: blanchedalmond;
+      color: black;
+      height: 60px;
+      width: 600px;
     }
-    p.first-para {
-      color: red;
-    }
-    em {
-      border-bottom: dashed 1px white;
-    }
-    a:link {
-      color: white;
-    }
-    a:hover {
-      color: green;
-    }
-    a:active {
-      color: orange;
-    }
-    a:visited {
-      color: yellow;
-    }
-    img {
-      width: 180px;
-      /* margin-bottom: 60px; */
-      padding: 50px;
-      background-color: white;
-      border: solid 3px cyan;
-      box-sizing: border-box;
-      vertical-align: bottom;
-    }
-    </style>
-  </head>
-  <body>
-    <div class="title">
-      <h1>君喻学堂 junyu study</h1>
-      <img src="static/image/logo.png" alt="君喻教育，培养聪明人">
-    </div>
-    <p class="first-para">欢迎来到君喻学堂，在这里，我们为你准备了由浅入深的<em>Web开发课程</em>。</p>
-    <h2>第3课</h2>
-    <p>要进入Web开发的世界，要做的第一件事是了解Web开发的语言。我们从<a href="https://developer.mozilla.org/zh-CN/docs/learn/HTML/Introduction_to_HTML">HTML</a>开始入手，HTML是浏览器能够识别的“第一语言”。</p>
-  </body>
+  </style>
+</head>
+<body>
+  <h1 class="fusion">合欢是矛盾的我现今给出的答案</h1>
+  <p>原来如此，现在的我可能终于找到了一些不必重复加害自己或者其他人的方法。</p>
+  <img src="static/image/logo.png" alt="偷的图" class="img">
+  <h2>初始化数值系统</h2>
+  <p>如果说在此之前是一种混沌的状态下一直陪着愚蠢不自知的小丑演戏，其实目前的每一步只是在不加评判地否决过去的思考，自以为在向着完全相反的方向行走，实际上更多部分是<a href="https://chromewebstore.google.com/?hl=zh-CN">无法洞察</a>的。</p>
+  <div id="main">
+    <article></article>
+    <article></article>
+    <article></article>
+    <footer></footer>
+  </div>
+  <div id="sidebar">
+
+  </div>
+</body>
 </html>
