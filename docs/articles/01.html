@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.3.3/echarts.min.js"></script>
+    <style>
+        #chart {
+            width: 600px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="chart"></div>
+    <script type="text/javascript">
+        const chartEl = document.querySelector('#chart')
+        const myChart = echarts.init(chartEl);
+       
+        const option = {
+            title:{
+                text:'Echarts从此告别垃圾UG'
+            },
+            tooltip:{},
+            xAxis:{
+                data: ["Unreal Engine", "Maya", "Houdini", "Front"],
+            },
+            yAxis:{},
+            series:[
+                {
+                    name: "Usage",
+                    type:"bar",
+                    data:[4, 3, 3, 2],
+                },
+            ],
+        };
+
+
+        myChart.setOption(option)
+    </script>
+</body>
+
+</html>
